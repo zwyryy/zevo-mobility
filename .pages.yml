@@ -1,0 +1,99 @@
+media:
+  input: assets
+  output: assets
+  rename: safe
+  extensions: [png, jpg, jpeg, webp, svg]
+
+settings:
+  commit:
+    identity: user
+    templates:
+      update: "content: update ZEVO website by {userName}"
+
+content:
+  - name: website
+    label: 官网内容
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: logo
+        label: 公司 Logo
+        type: image
+        required: true
+      - name: companyNameZh
+        label: 公司中文名
+        type: string
+        required: true
+      - name: companyNameEn
+        label: 公司英文名
+        type: string
+        required: true
+      - name: email
+        label: 业务邮箱
+        type: string
+        required: true
+      - name: phone
+        label: 联系电话
+        type: string
+        required: true
+      - name: locationZh
+        label: 中文地址
+        type: string
+      - name: locationEn
+        label: 英文地址
+        type: string
+      - name: aboutZh
+        label: 中文公司介绍
+        type: text
+      - name: aboutEn
+        label: 英文公司介绍
+        type: text
+      - name: products
+        label: 产品与报价
+        type: object
+        list:
+          min: 1
+          collapsible:
+            collapsed: true
+            summary: "{model} · {nameZh}"
+        fields:
+          - name: category
+            label: 产品分类
+            type: select
+            required: true
+            options:
+              values:
+                - value: two
+                  label: 电动二轮车
+                - value: three
+                  label: 电动三轮车
+                - value: scooter
+                  label: 电动滑板车
+                - value: bike
+                  label: 电动自行车
+          - name: model
+            label: 型号
+            type: string
+            required: true
+          - name: nameZh
+            label: 中文名称
+            type: string
+            required: true
+          - name: nameEn
+            label: 英文名称
+            type: string
+            required: true
+          - name: image
+            label: 产品图片
+            type: image
+            required: true
+          - name: motor
+            label: 电机参数
+            type: string
+          - name: range
+            label: 续航里程
+            type: string
+          - name: price
+            label: FOB 参考报价
+            type: string
