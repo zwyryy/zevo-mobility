@@ -84,10 +84,15 @@ content:
             label: 英文名称
             type: string
             required: true
-          - name: image
-            label: 产品图片
-            type: image
+          - name: imageUrl
+            label: 当前图片链接
+            type: string
             required: true
+            description: 可保留现有链接；上传新图片后，网站会优先使用新图片。
+          - name: image
+            label: 上传新产品图片
+            type: image
+            required: false
           - name: motor
             label: 电机参数
             type: string
