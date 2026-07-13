@@ -1,0 +1,53 @@
+{
+  "logo": "assets/zevo-logo-mark.svg",
+  "companyNameZh": "泽沃新能源",
+  "companyNameEn": "ZEVO Mobility",
+  "email": "sales@zevomobility.com",
+  "phone": "+86 188 0000 6688",
+  "locationZh": "中国 · 浙江",
+  "locationEn": "Zhejiang, China",
+  "aboutZh": "我们专注于高性价比电动出行产品，连接成熟供应链与全球买家。支持电池、电机、颜色、包装与品牌定制。",
+  "aboutEn": "We connect proven supply chains with global buyers. Battery, motor, color, packaging and branding can all be customized.",
+  "products": [
+    {
+      "category": "two",
+      "model": "ZE-S8",
+      "nameZh": "城市轻骑 S8",
+      "nameEn": "City Rider S8",
+      "image": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1200&q=85",
+      "motor": "1200W",
+      "range": "65–80 km",
+      "price": "$680–760"
+    },
+    {
+      "category": "three",
+      "model": "ZE-T5",
+      "nameZh": "货运三轮 T5",
+      "nameEn": "Cargo Trike T5",
+      "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=85",
+      "motor": "1500W",
+      "range": "70–90 km",
+      "price": "$1,180–1,360"
+    },
+    {
+      "category": "scooter",
+      "model": "ZE-X3",
+      "nameZh": "折叠滑板车 X3",
+      "nameEn": "Foldable Scooter X3",
+      "image": "https://images.unsplash.com/photo-1623079397667-473f53ce7f71?auto=format&fit=crop&w=1200&q=85",
+      "motor": "500W",
+      "range": "35–45 km",
+      "price": "$245–310"
+    },
+    {
+      "category": "bike",
+      "model": "ZE-E6",
+      "nameZh": "通勤电助力 E6",
+      "nameEn": "Commuter E-bike E6",
+      "image": "https://images.unsplash.com/photo-1571333250630-f0230c320b6d?auto=format&fit=crop&w=1200&q=85",
+      "motor": "350W",
+      "range": "55–75 km",
+      "price": "$520–640"
+    }
+  ]
+}
